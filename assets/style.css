@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(250, 242, 171);
+}
+button {
+    padding: 5px;
+    background-color: rgb(236, 230, 221);
+    margin: 5px !important;
+    border: rgb(199, 87, 102);
+    color: rgb(199, 87, 102);
+    border-style: solid;
+}
+
+nav {
+    background-color: rgb(199, 87, 102);
+    color: white;
+    padding: 5px;
+}
+
+.btn-grid {
+    display: grid;
+    padding-bottom: 40vh;
+}
+
+h2 {
+    margin-top: 20px;
+    padding: 10px;
+    color: rgb(199, 87, 102);
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 30px;
+    float: left;
+}
+
+.homepageJT {
+    color: white;
+    background-image: url(Imgs/photo-1513104890138-7c749659a591.jfif);
+    margin-bottom: 0px !important;
+    opacity: 70%;
+}
+
+.resultsJT {
+    color: white;
+    background-image: url(Imgs/chinese-take-out-473784604-57d31f7f3df78c5833464853.jpg);
+    margin-bottom: 0px !important;
+    opacity: 50%;
+}
+
+.row {
+    background-color: rgb(250, 242, 171);
+}
+
+.background {
+    background-color: rgb(250, 242, 171);
+    height: 100%;
+}
+
+.jumbotron-fluid {
+    background-color: rgb(250, 242, 171);
+}
+
+.footer {
+    background-color: rgb(199, 87, 102);
+    color: white;
+}
