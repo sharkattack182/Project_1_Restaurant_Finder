@@ -19,7 +19,7 @@ $.get("https://ipapi.co/json").then(function (response) {
     }
     $.ajax(settings).then(function (res) {
         console.log(res);
-
+        //this goes inside a for loop and we just make a for loop <3 that will and change the zeros to i's.
         $(".name").text((res.restaurants[0].restaurant.name))
         $(".description").text((res.restaurants[0].restaurant.cuisines))
         $(".address").text((res.restaurants[0].restaurant.location.address))
