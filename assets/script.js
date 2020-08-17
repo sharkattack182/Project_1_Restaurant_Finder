@@ -27,4 +27,6 @@ $.get("https://ipapi.co/json").then(function (response) {
         $(".rating").text(("Rating: " + res.restaurants[0].restaurant.user_rating.aggregate_rating))
     })
 
+    //want to experiment with creating the cards dynamically
+
 });
