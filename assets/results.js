@@ -1,3 +1,5 @@
+var searchParams = new URLSearchParams(window.location.search);
+var cuisineId = searchParams.get('cuisine');
 
 $.get("https://ipapi.co/json").then(function (response) {
     console.log(response);
@@ -6,7 +8,7 @@ $.get("https://ipapi.co/json").then(function (response) {
 
     var latitude = response.latitude;
     var longitude = response.longitude;
-    var ButtonResult = "Bar"; //need to work this variable out and use jquery to add the value of wahtever button is pressed
+    //var ButtonResult = "55"; //need to work this variable out and use jquery to add the value of wahtever button is pressed
 
     // found these implementation notes
     // Implementation Notes
@@ -19,12 +21,12 @@ $.get("https://ipapi.co/json").then(function (response) {
 
 
 
-    var settings = {  
+    var settings = {
         headers: {
             'user-key': "34f65fbedd34ab6e2274901ccfc95f56"
         },
         method: "GET",
-        url: "https://developers.zomato.com/api/v2.1/search?entity_id=%23%23&count=10&lat=" + latitude + "&lon=" + longitude + "&radius=58046.72&cuisines="+ ButtonResult + "&sort=rating" //+ ButtonResult  need to set cuisine to a variable
+        url: "https://developers.zomato.com/api/v2.1/search?entity_id=%23%23&count=10&lat=" + latitude + "&lon=" + longitude + "&radius=58046.72&cuisines=" + cuisineId + "&sort=rating" //+ ButtonResult  need to set cuisine to a variable
 
     }
     $.ajax(settings).then(function (res) {
