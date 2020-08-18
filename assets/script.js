@@ -1,3 +1,5 @@
+$("button").on("click", function(e) {
+    var ButtonResult = e.target.val()
 
 $.get("https://ipapi.co/json").then(function (response) {
     console.log(response);
@@ -6,7 +8,7 @@ $.get("https://ipapi.co/json").then(function (response) {
 
     var latitude = response.latitude;
     var longitude = response.longitude;
-    var ButtonResult = "Bar"; //need to work this variable out and use jquery to add the value of wahtever button is pressed
+    var ButtonResult = "55"; //need to work this variable out and use jquery to add the value of wahtever button is pressed
 
     // found these implementation notes
     // Implementation Notes
@@ -58,3 +60,5 @@ $.get("https://ipapi.co/json").then(function (response) {
     //want to experiment with creating the cards dynamically
 
 });
+
+})
