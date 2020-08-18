@@ -8,6 +8,16 @@ $.get("https://ipapi.co/json").then(function (response) {
     var longitude = response.longitude;
     var ButtonResult = "Bar"; //need to work this variable out and use jquery to add the value of wahtever button is pressed
 
+    // found these implementation notes
+    // Implementation Notes
+    // The location input can be specified using Zomato location ID or coordinates.Cuisine / Establishment / Collection IDs can be obtained from respective api calls.Get up to 100 restaurants by changing the 'start' and 'count' parameters with the maximum value of count being 20. Partner Access is required to access photos and reviews.
+    //     Examples:
+
+    // To search for 'Italian' restaurants in 'Manhattan, New York City', set cuisines = 55, entity_id = 94741 and entity_type = zone
+    // To search for 'cafes' in 'Manhattan, New York City', set establishment_type = 1, entity_type = zone and entity_id = 94741
+    // Get list of all restaurants in 'Trending this Week' collection in 'New York City' by using entity_id = 280, entity_type = city and collection_id = 1
+
+
 
     var settings = {  
         headers: {
