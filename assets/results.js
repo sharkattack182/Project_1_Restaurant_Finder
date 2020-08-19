@@ -2,7 +2,7 @@ var searchParams = new URLSearchParams(window.location.search);
 var cuisineId = searchParams.get('cuisine');
 
 
-$(".btn").on("click", function() {
+$(".btn-radius").on("click", function() {
     
     var radius = $(this).val();
     $(".hide").addClass("show");
@@ -60,10 +60,41 @@ $(".btn").on("click", function() {
         $(".phone3").text((res.restaurants[2].restaurant.phone_numbers));
         $(".rating3").text(("Rating: " + res.restaurants[2].restaurant.user_rating.aggregate_rating));
         $(".web3").attr('href', res.restaurants[2].restaurant.url);
+        //forth card
+        $(".img4").attr('href', JSON.stringify(res.restaurants[3].restaurant.photos_url));
+        $(".name4").text((res.restaurants[3].restaurant.name));
+        $(".description4").text((res.restaurants[3].restaurant.cuisines));
+        $(".address4").text((res.restaurants[3].restaurant.location.address));
+        $(".phone4").text((res.restaurants[3].restaurant.phone_numbers));
+        $(".rating4").text(("Rating: " + res.restaurants[3].restaurant.user_rating.aggregate_rating));
+        $(".web4").attr('href', res.restaurants[3].restaurant.url);
+        //fifth card
+        $(".img5").attr('href', JSON.stringify(res.restaurants[4].restaurant.photos_url));
+        $(".name5").text((res.restaurants[4].restaurant.name));
+        $(".description5").text((res.restaurants[4].restaurant.cuisines));
+        $(".address5").text((res.restaurants[4].restaurant.location.address));
+        $(".phone5").text((res.restaurants[4].restaurant.phone_numbers));
+        $(".rating5").text(("Rating: " + res.restaurants[4].restaurant.user_rating.aggregate_rating));
+        $(".web5").attr('href', res.restaurants[4].restaurant.url);
+        //sixth card
+        $(".img6").attr('href', JSON.stringify(res.restaurants[5].restaurant.photos_url));
+        $(".name6").text((res.restaurants[5].restaurant.name));
+        $(".description6").text((res.restaurants[5].restaurant.cuisines));
+        $(".address6").text((res.restaurants[5].restaurant.location.address));
+        $(".phone6").text((res.restaurants[5].restaurant.phone_numbers));
+        $(".rating6").text(("Rating: " + res.restaurants[5].restaurant.user_rating.aggregate_rating));
+        $(".web6").attr('href', res.restaurants[5].restaurant.url);
+
     })
 
     //want to experiment with creating the cards dynamically
 
 });
+})
+
+
+$(".show-more").on("click", function() {
+    $(".hide2").addClass("show2");
+    $(this).addClass("hide");
 })
 

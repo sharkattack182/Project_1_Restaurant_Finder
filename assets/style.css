@@ -75,13 +75,13 @@ h2 {
 }
 
 .contained {
-    background-color: darkblue;
+    background-color: rgb(126, 126, 163);
     margin-top: 50px;
     margin-bottom: 0;
 }
 
 .contained-results {
-    background-color: darkblue;
+    background-color: rgb(126, 126, 163);
     margin-bottom: 50px;
     margin-top: 0;
 }
@@ -92,4 +92,25 @@ h2 {
 
 .show {
     display: inline;
+}
+
+.hide2 {
+    display: none;
+}
+
+.show2 {
+    display: inline;
+}
+
+.hide3 {
+    display: none;
+}
+
+.show3 {
+    display: inline;
+}
+
+.show-more {
+    margin-left: auto;
+    margin-right: auto;
 }
