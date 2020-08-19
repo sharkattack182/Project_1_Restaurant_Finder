@@ -1,24 +1,21 @@
 # Project_1_Restaurant_Finder
 
-# User Story
+# User_Story 
+As a user I want to be able to locate the highest rated local restaurants based on food type so that I can easily determine where I'd like to eat.
 
+# Acceptance_Criteria
+Given 
+When I 
+Then I
+When I
+then I
 
-## Description
+## Site Pictures
 
-GeoSnacks will find, based on the users food type preference, the top three resaurants in their area.
-For each restaurant the user will have the option to visit a chosen restaurants website and get driving directions
+![HomePage]()
 
-
-## Image
-
-![Main Page]()
-
-## Results Page
-
-![Results page]()
+![Results Page]()
 
 ## Deployed Site
 
 [GeoSnacks]()
-
-
