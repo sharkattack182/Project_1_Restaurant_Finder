@@ -1,49 +1,35 @@
-var searchParams = new URLSearchParams(window.location.search);
+var searchParams = new URLSearchParams(window.location.search); //this is what jeff helped us qith that pulls the cusine id**
 var cuisineId = searchParams.get('cuisine');
 
 
-$(".btn-radius").on("click", function() {
+$(".btn-radius").on("click", function() {  //on click function that starts when you clikc a radius option 
     
-    var radius = $(this).val();
-    $(".hide").addClass("show");
-    $.get("https://ipapi.co/json").then(function (response) {
-    console.log(response);
-    console.log(response.latitude);
-    console.log(response.longitude);
+    var radius = $(this).val();  //sets the value of radius to the value of the button pressed
+    $(".hide").addClass("show"); //this show the first row of cards by adding class show styled in css to display: inline
+    $.get("https://ipapi.co/json").then(function (response) { // call our first api that gets our location
+   
 
-    var latitude = response.latitude;
-    var longitude = response.longitude;
-    //var ButtonResult = "55"; //need to work this variable out and use jquery to add the value of wahtever button is pressed
-
-    // found these implementation notes
-    // Implementation Notes
-    // The location input can be specified using Zomato location ID or coordinates.Cuisine / Establishment / Collection IDs can be obtained from respective api calls.Get up to 100 restaurants by changing the 'start' and 'count' parameters with the maximum value of count being 20. Partner Access is required to access photos and reviews.
-    //     Examples:
-
-    // To search for 'Italian' restaurants in 'Manhattan, New York City', set cuisines = 55, entity_id = 94741 and entity_type = zone
-    // To search for 'cafes' in 'Manhattan, New York City', set establishment_type = 1, entity_type = zone and entity_id = 94741
-    // Get list of all restaurants in 'Trending this Week' collection in 'New York City' by using entity_id = 280, entity_type = city and collection_id = 1
-     // needto grab button value but can only think to put it in an on click need to know how to pass that value out and assign it to variable
-
-
-    var settings = {
+    var latitude = response.latitude; //we set a variable to get our lat from the response
+    var longitude = response.longitude; // we do the same for our long
+    
+    var settings = {            //call our secind api zomato
         headers: {
             'user-key': "34f65fbedd34ab6e2274901ccfc95f56"
         },
         method: "GET",
         url: "https://developers.zomato.com/api/v2.1/search?entity_id=%23%23&count=10&lat=" + latitude + "&lon=" + longitude + "&radius=" + radius + "&cuisines=" + cuisineId + "&sort=rating" //+ ButtonResult  need to set cuisine to a variable
-
+                                                                                            // set our latitude     //set long              //set radius from button val  //cusine id** is value of button on Home page
     }
     $.ajax(settings).then(function (res) {
-        console.log(res);
+        console.log(res);  //console logs the pobject where we get all the info (response)
         //first card
-        $(".img1").attr('href', JSON.stringify(res.restaurants[0].restaurant.photos_url));
-        $(".name1").text((res.restaurants[0].restaurant.name));
+        $(".img1").attr('href', JSON.stringify(res.restaurants[0].restaurant.photos_url));  //calling the object with the class of img1 and setting its attribute to a string of "res.res...." this is an image tag
+        $(".name1").text((res.restaurants[0].restaurant.name)); //using jquery i set the text of a bunch of different elements to the response value that we needed for each element
         $(".description1").text((res.restaurants[0].restaurant.cuisines));
         $(".address1").text((res.restaurants[0].restaurant.location.address));
         $(".phone1").text((res.restaurants[0].restaurant.phone_numbers));
         $(".rating1").text(("Rating: " + res.restaurants[0].restaurant.user_rating.aggregate_rating));
-        $(".web1").attr('href', res.restaurants[0].restaurant.url);
+        $(".web1").attr('href', res.restaurants[0].restaurant.url); //set attribute instead of text gave it an hfref and set value to the url in the response
         //second card
         $(".img2").attr('href', JSON.stringify(res.restaurants[1].restaurant.photos_url));
         $(".name2").text((res.restaurants[1].restaurant.name));
@@ -86,9 +72,6 @@ $(".btn-radius").on("click", function() {
         $(".web6").attr('href', res.restaurants[5].restaurant.url);
 
     })
-
-    //want to experiment with creating the cards dynamically
-
 });
 })
 
