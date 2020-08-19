@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="text-center" onclick="window.location.href='/../index.html';">GeoSnacks</nav>
+    <nav class="text-center" onclick="window.location.href='index.html';">GeoSnacks</nav>
     <div class="jumbotron jumbotron-fluid resultsJT">
         <div class="container">
             <h1 class="display-4">GeoSnacks</h1>
@@ -22,13 +22,21 @@
     </div>
 
     <div class="container" id="results-page">
-        <div class="row text-center">
+        <div class="col-md-12">
+
+            <div class="row contained text-center">
             <div class="col-md-12">
                 <h2>We found these results in your area</h2>
             </div>
+            <div class="col-md-12"><h3>Choose your search radius</h3></div>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-danger 5btn" value="58046.72">5 Miles</button>
+                <button type="button" class="btn btn-danger 10btn" value="116093.44">10 Miles</button>
+                <button type="button" class="btn btn-danger 20btn" value="232186.88">20 Miles</button>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="row contained-results">
+            <div class="col-12 hide">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top img1">
                     <div class="card-body">
@@ -36,14 +44,13 @@
                         <p class="card-text description1">This is the description of the place.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item distance1">Distance from user</li>
                         <li class="list-group-item address1">Address</li>
                         <li class="list-group-item phone1">Phone Number</li>
                         <li class="list-group-item rating1">Rating</li>
                     </ul>
                     <div class="card-body">
                         <a class="card-link web1">Website</a>
-                        <a href="#" class="card-link">Directions</a>
+
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -53,34 +60,35 @@
                         <p class="card-text description2 ">This is the description of the place.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item distance2">Distance from user</li>
+
                         <li class="list-group-item address2">Address</li>
                         <li class="list-group-item phone2">Phone Number</li>
                         <li class="list-group-item rating2">Rating</li>
                     </ul>
                     <div class="card-body">
                         <a href="#" class="card-link web2">Website</a>
-                        <a href="#" class="card-link">Directions</a>
+
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top img3">
                     <div class="card-body">
                         <h5 class="card-title name3">Third Result</h5>
-                        <p class="card-text">This is the description of the place.</p>
+                        <p class="card-text description3">This is the description of the place.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item distance3">Distance from user</li>
+
                         <li class="list-group-item address3">Address</li>
                         <li class="list-group-item phone3">Phone Number</li>
                         <li class="list-group-item rating3">Rating</li>
                     </ul>
                     <div class="card-body">
                         <a href="#" class="card-link web3">Website</a>
-                        <a href="#" class="card-link">Directions</a>
+
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <footer class="footer mt-auto py-3">
@@ -88,7 +96,6 @@
             <span>GeoSnacks</span>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
