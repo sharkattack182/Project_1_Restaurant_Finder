@@ -1,7 +1,9 @@
 var searchParams = new URLSearchParams(window.location.search);
 var cuisineId = searchParams.get('cuisine');
-
-$.get("https://ipapi.co/json").then(function (response) {
+$(".btn").on("click", function() {
+    
+    var radius = $(this).val();
+    $.get("https://ipapi.co/json").then(function (response) {
     console.log(response);
     console.log(response.latitude);
     console.log(response.longitude);
@@ -26,7 +28,7 @@ $.get("https://ipapi.co/json").then(function (response) {
             'user-key': "34f65fbedd34ab6e2274901ccfc95f56"
         },
         method: "GET",
-        url: "https://developers.zomato.com/api/v2.1/search?entity_id=%23%23&count=10&lat=" + latitude + "&lon=" + longitude + "&radius=58046.72&cuisines=" + cuisineId + "&sort=rating" //+ ButtonResult  need to set cuisine to a variable
+        url: "https://developers.zomato.com/api/v2.1/search?entity_id=%23%23&count=10&lat=" + latitude + "&lon=" + longitude + "&radius=" + radius + "&cuisines=" + cuisineId + "&sort=rating" //+ ButtonResult  need to set cuisine to a variable
 
     }
     $.ajax(settings).then(function (res) {
@@ -60,3 +62,5 @@ $.get("https://ipapi.co/json").then(function (response) {
     //want to experiment with creating the cards dynamically
 
 });
+})
+
