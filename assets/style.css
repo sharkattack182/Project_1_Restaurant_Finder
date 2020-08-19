@@ -18,7 +18,7 @@ nav {
 
 .btn-grid {
     display: grid;
-    padding-bottom: 40vh;
+    padding-bottom: 50px;
 }
 
 h2 {
@@ -28,7 +28,7 @@ h2 {
 }
 
 .card {
-    margin-left: auto;
+    
     margin-right: auto;
     margin: 30px;
     float: left;
@@ -64,4 +64,32 @@ h2 {
 .footer {
     background-color: rgb(199, 87, 102);
     color: white;
+}
+.blue {
+    background-color: rgb(126, 126, 163);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0%;
+    margin-bottom: 50px;
+    margin-top: 45px;
+}
+
+.contained {
+    background-color: darkblue;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.contained-results {
+    background-color: darkblue;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline;
 }
