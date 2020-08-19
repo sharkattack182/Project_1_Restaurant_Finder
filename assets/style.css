@@ -18,7 +18,7 @@ nav {
 
 .btn-grid {
     display: grid;
-    padding-bottom: 40vh;
+    padding-bottom: 50px;
 }
 
 h2 {
@@ -64,4 +64,12 @@ h2 {
 .footer {
     background-color: rgb(199, 87, 102);
     color: white;
+}
+.blue {
+    background-color: rgb(126, 126, 163);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0%;
+    margin-bottom: 50px;
+    margin-top: 45px;
 }

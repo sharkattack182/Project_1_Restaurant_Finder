@@ -3,3 +3,4 @@ $('button').on("click", function() {
     window.location.href = "./results.html?cuisine=" + buttonResult;
 });
 
+
