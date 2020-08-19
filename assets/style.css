@@ -85,3 +85,11 @@ h2 {
     margin-bottom: 50px;
     margin-top: 0;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline;
+}

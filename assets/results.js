@@ -1,7 +1,12 @@
 var searchParams = new URLSearchParams(window.location.search);
 var cuisineId = searchParams.get('cuisine');
 
-$.get("https://ipapi.co/json").then(function (response) {
+
+$(".btn").on("click", function() {
+    
+    var radius = $(this).val();
+    $(".hide").addClass("show");
+    $.get("https://ipapi.co/json").then(function (response) {
     console.log(response);
     console.log(response.latitude);
     console.log(response.longitude);
@@ -18,7 +23,7 @@ $.get("https://ipapi.co/json").then(function (response) {
     // To search for 'Italian' restaurants in 'Manhattan, New York City', set cuisines = 55, entity_id = 94741 and entity_type = zone
     // To search for 'cafes' in 'Manhattan, New York City', set establishment_type = 1, entity_type = zone and entity_id = 94741
     // Get list of all restaurants in 'Trending this Week' collection in 'New York City' by using entity_id = 280, entity_type = city and collection_id = 1
-    var radius = $() // needto grab button value but can only think to put it in an on click need to know how to pass that value out and assign it to variable
+     // needto grab button value but can only think to put it in an on click need to know how to pass that value out and assign it to variable
 
 
     var settings = {
@@ -26,7 +31,7 @@ $.get("https://ipapi.co/json").then(function (response) {
             'user-key': "34f65fbedd34ab6e2274901ccfc95f56"
         },
         method: "GET",
-        url: "https://developers.zomato.com/api/v2.1/search?entity_id=%23%23&count=10&lat=" + latitude + "&lon=" + longitude + "&radius=58046.72&cuisines=" + cuisineId + "&sort=rating" //+ ButtonResult  need to set cuisine to a variable
+        url: "https://developers.zomato.com/api/v2.1/search?entity_id=%23%23&count=10&lat=" + latitude + "&lon=" + longitude + "&radius=" + radius + "&cuisines=" + cuisineId + "&sort=rating" //+ ButtonResult  need to set cuisine to a variable
 
     }
     $.ajax(settings).then(function (res) {
@@ -60,3 +65,5 @@ $.get("https://ipapi.co/json").then(function (response) {
     //want to experiment with creating the cards dynamically
 
 });
+})
+
