@@ -1,8 +1,11 @@
 var searchParams = new URLSearchParams(window.location.search);
 var cuisineId = searchParams.get('cuisine');
+
+
 $(".btn").on("click", function() {
     
     var radius = $(this).val();
+    $(".hide").addClass("show");
     $.get("https://ipapi.co/json").then(function (response) {
     console.log(response);
     console.log(response.latitude);
@@ -20,7 +23,7 @@ $(".btn").on("click", function() {
     // To search for 'Italian' restaurants in 'Manhattan, New York City', set cuisines = 55, entity_id = 94741 and entity_type = zone
     // To search for 'cafes' in 'Manhattan, New York City', set establishment_type = 1, entity_type = zone and entity_id = 94741
     // Get list of all restaurants in 'Trending this Week' collection in 'New York City' by using entity_id = 280, entity_type = city and collection_id = 1
-    var radius = $() // needto grab button value but can only think to put it in an on click need to know how to pass that value out and assign it to variable
+     // needto grab button value but can only think to put it in an on click need to know how to pass that value out and assign it to variable
 
 
     var settings = {
