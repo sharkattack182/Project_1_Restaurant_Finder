@@ -1,12 +1,22 @@
 # Project_1_Restaurant_Finder
-#User_Story
-As a 
-I want to
-So that
 
-# Acceptance_Criteria
-Given 
-When I
-Then I
-When I
-then I
+
+## Description
+
+GeoSnacks will find, based on the users food type preference, the top three resaurants in their area.
+For each restaurant the user will have the option to visit a chosen restaurants website and get driving directions
+
+
+## Image
+
+![Main Page]()
+
+## Results Page
+
+![Results page]()
+
+## Deployed Site
+
+[GeoSnacks]()
+
+
