@@ -1,12 +1,15 @@
+
 # **Project_1_Restaurant_Finder**
 
 [Geo Snacks](https://srassam.github.io/Project_1_Restaurant_Finder/)
 
 ## **User_Story**
 
+
 As a person who is hungry,
 I want to find a resturant that I would like to eat at,
 So that I can sustain my hunger. 
+
 
 ## **Acceptance_Criteria**
 
@@ -29,3 +32,4 @@ Welcome to [GeoSnacks!!](https://srassam.github.io/Project_1_Restaurant_Finder/)
 
 
 [Geo Snacks](https://srassam.github.io/Project_1_Restaurant_Finder/)
+
