@@ -1,25 +1,25 @@
-# **Project_1_Restaurant_Finder**
+# Project_1_Restaurant_Finder
+#User_Story
+As a person who is hungry,
+I want to find a resturant that I would like to eat at,
+So that I can sustain my hunger. 
 
-## User_Story 
-*As a user I want* to be able to locate the highest rated local restaurants based on food type *so that* I can easily determine where I'd like to eat.
+# Acceptance_Criteria
+Given the users location, 
+When I click the button of the food I would like to eat
+Then a list of avaliable resturants appears 
+When I select the resturant I would like to eat at, 
+Then I am taken to the Zomato API where I can look at the resturant and its menu!
 
-## Acceptance_Criteria
-Given
+**#About_The_Product**
+Welcome to GeoSnacks!! The Geolocation app that helps the user find the food that';s closest to them, within a 5,10,20 mile raidus. Search for anything and everything from Fast Food to Stake Houses! Try GeoSnacks today! 
 
-**When I** click a food type
+![Main Page](./assets/imgs/mainPage.PNG)
 
-**Then I** Gget to choose from a 5, 10, 0r 20 mile radius to search for the chosen food type.
 
-**When I** choose a mile radius
+![Search Radius](./assets/imgs/searchRadius.PNG)
 
-**then I** get three 
+![Results Page](./assets/imgs/moreResults.PNG)
 
-### Site Pictures
 
-![HomePage]()
-
-![Results Page]()
-
-# Deployed Site
-
-[GeoSnacks]()
+[Geo Snacks]()
