@@ -1,6 +1,6 @@
 # **Project_1_Restaurant_Finder**
 
-[Geo Snacks]()
+[Geo Snacks](https://srassam.github.io/Project_1_Restaurant_Finder/)
 
 ## **User_Story**
 
@@ -18,7 +18,7 @@ So that I can sustain my hunger.
 
 ## **About_The_Product**
 
-Welcome to [GeoSnacks!!]() The Geolocation app that helps the user find the food that';s closest to them, within a 5,10,20 mile raidus. Search for anything and everything from Fast Food to Stake Houses! Try GeoSnacks today! 
+Welcome to [GeoSnacks!!](https://srassam.github.io/Project_1_Restaurant_Finder/) The Geolocation app that helps the user find the food that';s closest to them, within a 5,10,20 mile raidus. Search for anything and everything from Fast Food to Stake Houses! Try GeoSnacks today! 
 
 ![Main Page](./assets/imgs/mainPage.PNG)
 
@@ -28,4 +28,4 @@ Welcome to [GeoSnacks!!]() The Geolocation app that helps the user find the food
 ![Results Page](./assets/imgs/moreResults.PNG)
 
 
-[Geo Snacks]()
+[Geo Snacks](https://srassam.github.io/Project_1_Restaurant_Finder/)
