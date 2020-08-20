@@ -12,17 +12,16 @@
 </head>
 
 <body>
-    <nav class="text-center" onclick="window.location.href='index.html';">GeoSnacks</nav>
+    <nav class="text-center" onclick="window.location.href='index.html';"><strong>GeoSnacks</strong></nav>
     <div class="jumbotron jumbotron-fluid resultsJT">
         <div class="container">
-            <h1 class="display-4">GeoSnacks</h1>
-            <p class="lead">Welcome to GeoSnacks. We take not only show you the closest places to eat. We
-                take you there!</p>
+            <h1 class="display-4"><strong>GeoSnacks</strong></h1>
+            <p class="lead"><strong>Welcome to GeoSnacks. Let us show you where to eat!</strong></p>
         </div>
     </div>
 
-    <div class="container" id="results-page">
-        <div class="col-md-12">
+    <div class="container" id="particles-js">
+        <div class="col-md-12 relative">
 
             <div class="row contained text-center">
                 <div class="col-md-12">
@@ -32,9 +31,9 @@
                     <h3>Choose your search radius</h3>
                 </div>
                 <div class="col-md-12">
-                    <button type="button" class="btn btn-radius btn-danger 5btn" value="58046.72">5 Miles</button>
-                    <button type="button" class="btn btn-radius btn-danger 10btn" value="116093.44">10 Miles</button>
-                    <button type="button" class="btn btn-radius btn-danger 20btn" value="232186.88">20 Miles</button>
+                    <button type="button" class="btn-radius 5btn" value="58046.72">5 Miles</button>
+                    <button type="button" class="btn-radius 10btn" value="116093.44">10 Miles</button>
+                    <button type="button" class="btn-radius 20btn" value="232186.88">20 Miles</button>
                 </div>
             </div>
             <div class="row contained-results">
@@ -46,7 +45,6 @@
                             <p class="card-text description1">This is the description of the place.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item distance1">Distance from user</li>
                             <li class="list-group-item address1">Address</li>
                             <li class="list-group-item phone1">Phone Number</li>
                             <li class="list-group-item rating1">Rating</li>
@@ -63,7 +61,6 @@
                             <p class="card-text description2 ">This is the description of the place.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item distance2">Distance from user</li>
                             <li class="list-group-item address2">Address</li>
                             <li class="list-group-item phone2">Phone Number</li>
                             <li class="list-group-item rating2">Rating</li>
@@ -80,7 +77,6 @@
                             <p class="card-text description3">This is the description of the place.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item distance3">Distance from user</li>
                             <li class="list-group-item address3">Address</li>
                             <li class="list-group-item phone3">Phone Number</li>
                             <li class="list-group-item rating3">Rating</li>
@@ -99,7 +95,6 @@
                             <p class="card-text description4">This is the description of the place.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item distance4">Distance from user</li>
                             <li class="list-group-item address4">Address</li>
                             <li class="list-group-item phone4">Phone Number</li>
                             <li class="list-group-item rating4">Rating</li>
@@ -116,7 +111,6 @@
                             <p class="card-text description5 ">This is the description of the place.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item distance5">Distance from user</li>
                             <li class="list-group-item address5">Address</li>
                             <li class="list-group-item phone5">Phone Number</li>
                             <li class="list-group-item rating5">Rating</li>
@@ -133,7 +127,6 @@
                             <p class="card-text description6">This is the description of the place.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item distance6">Distance from user</li>
                             <li class="list-group-item address6">Address</li>
                             <li class="list-group-item phone6">Phone Number</li>
                             <li class="list-group-item rating6">Rating</li>
@@ -145,16 +138,19 @@
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn-danger show-more">Show More</button>
+                    <button type="button" class="show-more">Show More</button>
                 </div>
             </div>
 
         </div>
-        <footer class="footer mt-auto py-3">
-            <div class="container-flex text-center">
-                <span>GeoSnacks</span>
+    </div>    
+       
+<footer class="footer mt-auto py-3">
+            <div class="container text-center">
+                <span><strong>GeoSnacks</strong></span>
             </div>
         </footer>
+    
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
@@ -165,6 +161,8 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/particles.js"></script>
+        <script type="text/javascript" src="assets/app.js"></script>
         <script src="assets/results.js"></script>
 </body>
 
