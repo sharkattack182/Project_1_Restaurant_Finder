@@ -24,8 +24,9 @@ button {
 nav {
     background-color: rgb(90, 90, 89);
     color: rgb(255, 209, 83);
-    padding: 5px;
+    padding: 10px;
     position: relative;
+    font-size: 18px;
     z-index: 2;
 }
 
@@ -38,6 +39,7 @@ nav {
 }
 .buttons {
     border-radius: 10px;
+    padding: 10px;
 }
 
 h2 {
@@ -71,6 +73,7 @@ h3 {
 .resultsJT {
     color: rgb(110, 108, 103);
     background-image: url(Imgs/qs2-1.jpg);
+    background-size: cover;
     margin-bottom: 0px !important;
     display: block;
     position: relative;
@@ -107,6 +110,7 @@ h3 {
     background-color: rgb(90, 90, 89);
     margin-top: 50px;
     margin-bottom: 0;
+    border-radius: 25px 25px 0px 0px;
     z-index: 2;
 }
 
@@ -114,6 +118,7 @@ h3 {
     background-color: rgb(90, 90, 89);
     margin-bottom: 50px;
     margin-top: 0;
+    border-radius: 0px 0px 25px 25px;
     z-index: 2;
 }
 
@@ -137,6 +142,7 @@ h3 {
 .show-more {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px !important;
 }
 
 .relative {
